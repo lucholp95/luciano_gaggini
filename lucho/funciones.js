@@ -13,7 +13,7 @@ function mostrarOcultarMenu(){
     }
 }
 
-//oculto el menu una vez que selecciono una opción
+//ocultar el menu una vez que selecciono una opción
 let links = document.querySelectorAll("nav a");
 for(var x = 0; x <links.length;x++){
     links[x].onclick = function(){
@@ -45,11 +45,9 @@ crearBarra(mo);
 let bs = document.getElementById("bs");
 crearBarra(bs);
 
-//Ahora voy a guardar la cantidad de barritas que se van a ir pintando por cada barar
-//para eso utilizo un arreglo, cada posiciòn pertenece a un elemento
+//guardar la cantidad de barras que se van a ir pintando
 //comienzan en -1 porque no tiene ninguna pintada al iniciarse
 let contadores = [-1,-1,-1,-1,-1,-1];
-//esta variable la voy a utilizar de bandera para saber si ya ejecuto la animación
 let entro = false;
 
 //función que aplica las animaciones de la habilidades
